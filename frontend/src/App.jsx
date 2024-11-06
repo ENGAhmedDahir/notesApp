@@ -35,7 +35,7 @@ function App() {
             {/* Add a fallback 404 route */}
             <Route path="*" element={<h2>404: Page Not Found</h2>} />
           </Routes>
-        <SignIn /> 
+        {/* <SignIn />  */}
         </>
       )}
     </>
