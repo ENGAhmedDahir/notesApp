@@ -19,7 +19,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<SignIn />} />
             <Route path="/" element={<Home />} />
-            {/* <Route path="/home" element={<Home />} /> */}
+            <Route path="/home" element={<Home />} />
             {/* Add a fallback 404 route */}
             <Route path="*" element={<h2>404: Page Not Found</h2>} />
           </Routes>
@@ -35,7 +35,7 @@ function App() {
             {/* Add a fallback 404 route */}
             <Route path="*" element={<h2>404: Page Not Found</h2>} />
           </Routes>
-        {/* <SignIn />  */}
+        <SignIn /> 
         </>
       )}
     </>
