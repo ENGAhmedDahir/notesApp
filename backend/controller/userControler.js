@@ -54,7 +54,7 @@ export const login = async  (req , res)=>{
         }
         // Generate and send the JWT token
         const expiresIn = 60 * 24 * 60 * 60 // 60 or 2 m days
-        const token = jwt.sign({ _id: user._id }, jwt_Secret, {
+        const token = jwt.sign({ _id: user._id }, process.env.jwt_secret, {
         expiresIn: expiresIn,  // corrected spelling
         })
          res.cookie('token', token, {
