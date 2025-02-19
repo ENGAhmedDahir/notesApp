@@ -15,10 +15,6 @@ const SignIn = () => {
   });
    const {login , user } = useUser()
 
-   useEffect(() => {
-  
-    if (user){ nav('/')}
-   },[])
 
   const [loading, setLoading] = useState(false); // Loading state for the form
 

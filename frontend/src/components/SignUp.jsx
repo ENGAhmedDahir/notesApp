@@ -13,12 +13,8 @@ const SignUp = () => {
     email: '',
     password: '',
   });
-  const {user } = useUser()
-
-  useEffect(() => {
  
-   if (user){ nav('/')}
-  },[])
+  
   const [loading, setLoading] = useState(false); // Loading state for the form
 
   // Handles changes in form fields
